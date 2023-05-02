@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<style>
+
+.container{
+  display:flex;
+  flex-direction:column;
+}
+
+.con1{
+  order:1;
+  background-color: green;
+}
+.con2{
+  order:3;
+   background-color: red;
+}
+
+.con3{
+  order:2;
+   background-color: blue;
+}
+
+/*For Large screen only*/
+@media(min-width:1200px){
+  .con1{
+    order:1;
+  }
+  .con2{
+    order:2;
+  }
+   .con3{
+    order:3;
+  }
+}
+
+
+
+</style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="con1">
+            number one
+        </div>
+        <div class="con2">
+            number two
+        </div>
+        <div class="con3">
+            number three
+        </div>
+    </div>
+
+</body>
+</html>
+
